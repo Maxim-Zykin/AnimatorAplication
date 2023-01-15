@@ -1,0 +1,48 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e98773768399e5fabb6f866083389bcb838"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e98ee6588010d1fbf8d6f4dfd1ca1d1c4e8"
+    }
+  ],
+  "containerPath" : "/Users/maksimzykin/Desktop/Developer/SwiftBook/AnimatorAplicatiom/Pods/Pods.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/maksimzykin/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/maksimzykin/Library/Developer/Xcode/DerivedData/Pods-ebiogzippbxlpjhacpfnvfyleqer/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/maksimzykin/Library/Developer/Xcode/DerivedData/Pods-ebiogzippbxlpjhacpfnvfyleqer/Index.noindex/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Release",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : false,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : false
+}

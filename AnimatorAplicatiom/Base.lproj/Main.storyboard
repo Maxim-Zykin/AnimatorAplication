@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimatorAplicatiom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHN-yw-4I9">
+                                <rect key="frame" x="76.666666666666686" y="123" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Core Animation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMY-3E-rzX">
+                                        <rect key="frame" x="20.333333333333329" y="46" width="199.33333333333337" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Qan-05-dzd"/>
+                                    <constraint firstItem="LMY-3E-rzX" firstAttribute="centerX" secondItem="eHN-yw-4I9" secondAttribute="centerX" id="Qx8-B8-yz9"/>
+                                    <constraint firstItem="LMY-3E-rzX" firstAttribute="centerY" secondItem="eHN-yw-4I9" secondAttribute="centerY" id="fRH-Xf-ATV"/>
+                                    <constraint firstAttribute="height" constant="128" id="pho-nn-czv"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8y-nK-gew">
+                                <rect key="frame" x="76.666666666666686" y="627" width="240" height="41"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Run Core Animation">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionAnimatedButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CGX-kx-ncc"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Czz-zV-sb7" customClass="SpringView" customModule="Spring">
+                                <rect key="frame" x="76.666666666666686" y="288" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spring Animation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6H5-M0-9pa">
+                                        <rect key="frame" x="9" y="46" width="222" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="0jf-uw-9MJ"/>
+                                    <constraint firstItem="6H5-M0-9pa" firstAttribute="centerX" secondItem="Czz-zV-sb7" secondAttribute="centerX" id="CXH-EV-lgi"/>
+                                    <constraint firstItem="6H5-M0-9pa" firstAttribute="centerY" secondItem="Czz-zV-sb7" secondAttribute="centerY" id="tGg-al-eyq"/>
+                                    <constraint firstAttribute="height" constant="128" id="upK-l4-FlI"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="wobble"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easeOut"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Jc-X1-FUG" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="76.666666666666686" y="693" width="240" height="41"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Run Spring Animation">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="springAnimationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UlU-eT-JCA"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BFy-On-XNu" customClass="SpringView" customModule="Spring">
+                                <rect key="frame" x="76.666666666666686" y="453" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Spring Animation" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NT7-v7-gd3">
+                                        <rect key="frame" x="10" y="52.666666666666686" width="219.66666666666666" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="FDX-OX-22f"/>
+                                    <constraint firstAttribute="height" constant="128" id="i8Q-Ag-TCf"/>
+                                    <constraint firstItem="NT7-v7-gd3" firstAttribute="centerY" secondItem="BFy-On-XNu" secondAttribute="centerY" id="igZ-Qp-ja0"/>
+                                    <constraint firstItem="NT7-v7-gd3" firstAttribute="centerX" secondItem="BFy-On-XNu" secondAttribute="centerX" id="kYq-jD-xPa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="wobble"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easeOut"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ktc-JG-MIb">
+                                <rect key="frame" x="76.666666666666686" y="759" width="240" height="41"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Random Animation">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="randomAnimarionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jjg-R9-mD3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8Jc-X1-FUG" firstAttribute="top" secondItem="C8y-nK-gew" secondAttribute="bottom" constant="25" id="0d7-V2-x8G"/>
+                            <constraint firstItem="Ktc-JG-MIb" firstAttribute="top" secondItem="8Jc-X1-FUG" secondAttribute="bottom" constant="25" id="33g-zD-AcR"/>
+                            <constraint firstItem="8Jc-X1-FUG" firstAttribute="width" secondItem="C8y-nK-gew" secondAttribute="width" id="6GE-3K-F5K"/>
+                            <constraint firstItem="eHN-yw-4I9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AIK-YO-Obx"/>
+                            <constraint firstItem="Ktc-JG-MIb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IQR-DR-vn8"/>
+                            <constraint firstItem="Ktc-JG-MIb" firstAttribute="width" secondItem="8Jc-X1-FUG" secondAttribute="width" id="Jod-FD-4Lb"/>
+                            <constraint firstItem="Czz-zV-sb7" firstAttribute="width" secondItem="eHN-yw-4I9" secondAttribute="width" id="VE0-N3-gKL"/>
+                            <constraint firstItem="8Jc-X1-FUG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aDu-pT-ir6"/>
+                            <constraint firstItem="C8y-nK-gew" firstAttribute="width" secondItem="eHN-yw-4I9" secondAttribute="width" id="du1-sS-au7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="C8y-nK-gew" secondAttribute="bottom" constant="150" id="f7M-Ix-VkM"/>
+                            <constraint firstItem="C8y-nK-gew" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fAw-Qt-Trc"/>
+                            <constraint firstItem="Czz-zV-sb7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jWM-8Y-mbm"/>
+                            <constraint firstItem="eHN-yw-4I9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="jjx-KT-oZi"/>
+                            <constraint firstItem="BFy-On-XNu" firstAttribute="top" secondItem="Czz-zV-sb7" secondAttribute="bottom" constant="37" id="rQ9-ch-Xb1"/>
+                            <constraint firstItem="BFy-On-XNu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v7Z-pL-IYv"/>
+                            <constraint firstItem="Czz-zV-sb7" firstAttribute="top" secondItem="eHN-yw-4I9" secondAttribute="bottom" constant="37" id="zLi-Aj-gma"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coreAnimatedView" destination="eHN-yw-4I9" id="6zf-k9-Znv"/>
+                        <outlet property="randomAnimationLabel" destination="NT7-v7-gd3" id="vnc-Cg-wE9"/>
+                        <outlet property="randomAnimationView" destination="BFy-On-XNu" id="Tcq-MY-tBF"/>
+                        <outlet property="springAnimationView" destination="8Jc-X1-FUG" id="BiC-5S-ZsK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

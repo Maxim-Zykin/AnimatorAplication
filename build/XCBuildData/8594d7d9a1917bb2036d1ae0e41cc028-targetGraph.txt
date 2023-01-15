@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Spring in Pods, no dependencies
+Pods-AnimatorAplicatiom in Pods, depends on:
+Spring in Pods (explicit)
